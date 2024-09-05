@@ -1,0 +1,54 @@
+.inputContainer {
+    display: flex;
+    margin-top: 1rem;
+    &.darkMode {
+        .input {
+          background-color: #2a2a2a;
+          color: #f0f0f0;
+          border-color: #444;
+        }
+  }
+ 
+
+    .sendButton {
+      background-color: #0051a2;
+
+      &:hover:not(:disabled) {
+        background-color: #003d7a;
+      }
+
+      &:disabled {
+        background-color: #444;
+      }
+    }
+  }
+  .input {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    resize: vertical;
+    min-height: 60px;
+    font-family: inherit;
+  }
+  
+  .sendButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #0070f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  
+    &:hover:not(:disabled) {
+      background-color: #0051a2;
+    }
+  
+    &:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+  }
